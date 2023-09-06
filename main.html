@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 300px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
 
+    <h2>3 random images</h2>
+
+    <div class="image-container">
+        <img src="https://picsum.photos/id/123/200/300" alt="Random image">
+        <img src="https://picsum.photos/id/124/200/300" alt="Random image">
+        <img src="https://picsum.photos/id/125/200/300" alt="Random image">
+    </div>
 </body>
-
 </html>
